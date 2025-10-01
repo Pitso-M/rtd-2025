@@ -1,0 +1,625 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+X-WR-CALNAME:RTD 2025 — All Stages
+PRODID:-//RTD2025//Schedule//EN
+X-WR-TIMEZONE:Africa/Johannesburg
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T100000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T100000
+DTEND;TZID=Africa/Johannesburg:20251003T110000
+SUMMARY:Black Villain — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T103000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T103000
+DTEND;TZID=Africa/Johannesburg:20251003T111500
+SUMMARY:Crayons — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T110000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T110000
+DTEND;TZID=Africa/Johannesburg:20251003T120000
+SUMMARY:Earful Soul — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T111500@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T111500
+DTEND;TZID=Africa/Johannesburg:20251003T121500
+SUMMARY:Miss U — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T120000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T120000
+DTEND;TZID=Africa/Johannesburg:20251003T130000
+SUMMARY:!Sooks — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T121500@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T121500
+DTEND;TZID=Africa/Johannesburg:20251003T131500
+SUMMARY:Os-Tailor — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T130000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T130000
+DTEND;TZID=Africa/Johannesburg:20251003T140000
+SUMMARY:Ryan Murgatroyd — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T131500@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T131500
+DTEND;TZID=Africa/Johannesburg:20251003T141500
+SUMMARY:Wesley XTC — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T140000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T140000
+DTEND;TZID=Africa/Johannesburg:20251003T150000
+SUMMARY:Atmos Blaq — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T143000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T143000
+DTEND;TZID=Africa/Johannesburg:20251003T150000
+SUMMARY:Mishy Kope — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T150000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T150000
+DTEND;TZID=Africa/Johannesburg:20251003T160000
+SUMMARY:Kid Fonque — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T150000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T150000
+DTEND;TZID=Africa/Johannesburg:20251003T153000
+SUMMARY:Kayla the Crow — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T154500@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T154500
+DTEND;TZID=Africa/Johannesburg:20251003T164500
+SUMMARY:Meccamind — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T160000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T160000
+DTEND;TZID=Africa/Johannesburg:20251003T170000
+SUMMARY:AV on Decks — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T164500@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T164500
+DTEND;TZID=Africa/Johannesburg:20251003T174500
+SUMMARY:Miss CJ — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T170000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T170000
+DTEND;TZID=Africa/Johannesburg:20251003T180000
+SUMMARY:Shamiso — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251003T173000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T173000
+DTEND;TZID=Africa/Johannesburg:20251003T180000
+SUMMARY:D’Phault — Main Stage
+LOCATION:Main Stage, Rocking the Daisies (Cloof Wine Estate, Darling)
+DESCRIPTION:MC: Scoop Makhathini
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251003T180000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T180000
+DTEND;TZID=Africa/Johannesburg:20251003T183000
+SUMMARY:Filah Lah Lah — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T180000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T180000
+DTEND;TZID=Africa/Johannesburg:20251003T190000
+SUMMARY:DJ Zinhle — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T180000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T180000
+DTEND;TZID=Africa/Johannesburg:20251003T190000
+SUMMARY:Kdollahz x RTD Legacy Ball — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251003T190000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T190000
+DTEND;TZID=Africa/Johannesburg:20251003T193000
+SUMMARY:Marcus Harvey — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T190000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T190000
+DTEND;TZID=Africa/Johannesburg:20251003T200000
+SUMMARY:FKA Mash — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T190000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T190000
+DTEND;TZID=Africa/Johannesburg:20251003T200000
+SUMMARY:Tsels DJ — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251003T200000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T200000
+DTEND;TZID=Africa/Johannesburg:20251003T203000
+SUMMARY:A-Reece — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T200000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T200000
+DTEND;TZID=Africa/Johannesburg:20251003T210000
+SUMMARY:Shakes & Les — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T200000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T200000
+DTEND;TZID=Africa/Johannesburg:20251003T210000
+SUMMARY:Soulchoke — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251003T210000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T210000
+DTEND;TZID=Africa/Johannesburg:20251003T214500
+SUMMARY:Elaine — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T210000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T210000
+DTEND;TZID=Africa/Johannesburg:20251003T213000
+SUMMARY:Scotts Maphuma — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T210000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T210000
+DTEND;TZID=Africa/Johannesburg:20251003T220000
+SUMMARY:Bravo Le Roux — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T213000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T213000
+DTEND;TZID=Africa/Johannesburg:20251003T223000
+SUMMARY:Kabza De Small — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T220000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T220000
+DTEND;TZID=Africa/Johannesburg:20251003T230000
+SUMMARY:Kyeezi — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251003T221500@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T221500
+DTEND;TZID=Africa/Johannesburg:20251003T230000
+SUMMARY:Focalistic — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251003T223000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T223000
+DTEND;TZID=Africa/Johannesburg:20251004T000000
+SUMMARY:Black Motion — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251003T230000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T230000
+DTEND;TZID=Africa/Johannesburg:20251004T000000
+SUMMARY:Workaholics — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251003T233000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251003T233000
+DTEND;TZID=Africa/Johannesburg:20251004T003000
+SUMMARY:Jessie Reyez — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T000000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T000000
+DTEND;TZID=Africa/Johannesburg:20251004T010000
+SUMMARY:Lelowhatsgood — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251004T010000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T010000
+DTEND;TZID=Africa/Johannesburg:20251004T020000
+SUMMARY:Summer Walker — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T010000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T010000
+DTEND;TZID=Africa/Johannesburg:20251004T020000
+SUMMARY:Celso Fabbri — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T020000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T020000
+DTEND;TZID=Africa/Johannesburg:20251004T040000
+SUMMARY:Surprise Act — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T020000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T020000
+DTEND;TZID=Africa/Johannesburg:20251004T030000
+SUMMARY:DJ Clen — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T030000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T030000
+DTEND;TZID=Africa/Johannesburg:20251004T040000
+SUMMARY:Rarri — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T100000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T100000
+DTEND;TZID=Africa/Johannesburg:20251004T110000
+SUMMARY:Autumn Erin — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T100000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T100000
+DTEND;TZID=Africa/Johannesburg:20251004T103000
+SUMMARY:Crayons — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T103000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T103000
+DTEND;TZID=Africa/Johannesburg:20251004T113000
+SUMMARY:Christian b2b Sip — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T110000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T110000
+DTEND;TZID=Africa/Johannesburg:20251004T120000
+SUMMARY:Amy Mauritz — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T113000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T113000
+DTEND;TZID=Africa/Johannesburg:20251004T123000
+SUMMARY:Color6lind — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T120000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T120000
+DTEND;TZID=Africa/Johannesburg:20251004T130000
+SUMMARY:Chronical Deep — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T123000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T123000
+DTEND;TZID=Africa/Johannesburg:20251004T133000
+SUMMARY:Jason Scoble — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T130000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T130000
+DTEND;TZID=Africa/Johannesburg:20251004T140000
+SUMMARY:2Shoes — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T133000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T133000
+DTEND;TZID=Africa/Johannesburg:20251004T143000
+SUMMARY:Guvenchy — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T140000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T140000
+DTEND;TZID=Africa/Johannesburg:20251004T150000
+SUMMARY:Massh — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T143000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T143000
+DTEND;TZID=Africa/Johannesburg:20251004T153000
+SUMMARY:Lover Boy — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T150000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T150000
+DTEND;TZID=Africa/Johannesburg:20251004T160000
+SUMMARY:Tristan Urwin — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T153000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T153000
+DTEND;TZID=Africa/Johannesburg:20251004T163000
+SUMMARY:Senhorá — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T160000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T160000
+DTEND;TZID=Africa/Johannesburg:20251004T170000
+SUMMARY:Dwson — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251004T163000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T163000
+DTEND;TZID=Africa/Johannesburg:20251004T170000
+SUMMARY:D’Phault — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+DESCRIPTION:MC: Scoop Makhathini
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T163000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T163000
+DTEND;TZID=Africa/Johannesburg:20251004T173000
+SUMMARY:Shakes — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T170000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T170000
+DTEND;TZID=Africa/Johannesburg:20251004T190000
+SUMMARY:Caiiro b2b Enoo Napa — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251004T171500@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T171500
+DTEND;TZID=Africa/Johannesburg:20251004T181500
+SUMMARY:Kujenga — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T173000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T173000
+DTEND;TZID=Africa/Johannesburg:20251004T183000
+SUMMARY:RTD x GalxBoy Fashion Show — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T183000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T183000
+DTEND;TZID=Africa/Johannesburg:20251004T193000
+SUMMARY:Kdollahz x RTD Legacy Ball — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251004T184500@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T184500
+DTEND;TZID=Africa/Johannesburg:20251004T193000
+SUMMARY:Lee Cole — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T190000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T190000
+DTEND;TZID=Africa/Johannesburg:20251004T200000
+SUMMARY:Djeff — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T194500@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T194500
+DTEND;TZID=Africa/Johannesburg:20251004T204500
+SUMMARY:Keem — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251004T200000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T200000
+DTEND;TZID=Africa/Johannesburg:20251004T203000
+SUMMARY:Saxby Twins — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T200000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T200000
+DTEND;TZID=Africa/Johannesburg:20251004T210000
+SUMMARY:Pierre Johnson — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T204500@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T204500
+DTEND;TZID=Africa/Johannesburg:20251004T214500
+SUMMARY:Sharky — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251004T210000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T210000
+DTEND;TZID=Africa/Johannesburg:20251004T213000
+SUMMARY:Loatinover Pounds — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T210000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T210000
+DTEND;TZID=Africa/Johannesburg:20251004T220000
+SUMMARY:Summer Heynes — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T214500@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T214500
+DTEND;TZID=Africa/Johannesburg:20251004T224500
+SUMMARY:Enrico Celento b2b Liam Hans — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251004T220000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T220000
+DTEND;TZID=Africa/Johannesburg:20251004T230000
+SUMMARY:Mereba — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T220000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T220000
+DTEND;TZID=Africa/Johannesburg:20251004T223000
+SUMMARY:Leemckrazy — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T223000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T223000
+DTEND;TZID=Africa/Johannesburg:20251004T233000
+SUMMARY:Vigro Deep — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251004T230000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T230000
+DTEND;TZID=Africa/Johannesburg:20251005T000000
+SUMMARY:KindlyNxsh — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251004T233000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T233000
+DTEND;TZID=Africa/Johannesburg:20251005T003000
+SUMMARY:Sam Tompkins — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251004T233000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251004T233000
+DTEND;TZID=Africa/Johannesburg:20251005T010000
+SUMMARY:Starrza — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:mainstage-20251005T010000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T010000
+DTEND;TZID=Africa/Johannesburg:20251005T020000
+SUMMARY:Earl Sweatshirt — Main Stage
+LOCATION:Main Stage, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251005T010000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T010000
+DTEND;TZID=Africa/Johannesburg:20251005T020000
+SUMMARY:Skelm — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251005T020000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T020000
+DTEND;TZID=Africa/Johannesburg:20251005T030000
+SUMMARY:Que DJ — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251005T020000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T020000
+DTEND;TZID=Africa/Johannesburg:20251005T030000
+SUMMARY:Teddy Tumi — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251005T030000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T030000
+DTEND;TZID=Africa/Johannesburg:20251005T040000
+SUMMARY:Niskerone — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:sowingtheseeds-20251005T030000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T030000
+DTEND;TZID=Africa/Johannesburg:20251005T040000
+SUMMARY:BakerGotTheKeys — Sowing the Seeds
+LOCATION:Sowing the Seeds, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251005T090000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T090000
+DTEND;TZID=Africa/Johannesburg:20251005T100000
+SUMMARY:Latique — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251005T100000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T100000
+DTEND;TZID=Africa/Johannesburg:20251005T113000
+SUMMARY:Capri-Sons — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251005T113000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T113000
+DTEND;TZID=Africa/Johannesburg:20251005T130000
+SUMMARY:Meek — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251005T130000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T130000
+DTEND;TZID=Africa/Johannesburg:20251005T150000
+SUMMARY:Jamie Slabber b2b Keilamanjaro — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251005T150000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T150000
+DTEND;TZID=Africa/Johannesburg:20251005T160000
+SUMMARY:Blaqkongo — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+BEGIN:VEVENT
+UID:coronabeachclub-20251005T160000@rtd2025
+DTSTART;TZID=Africa/Johannesburg:20251005T160000
+DTEND;TZID=Africa/Johannesburg:20251005T170000
+SUMMARY:Jazzworx & Thukuthela — Corona Beach Club
+LOCATION:Corona Beach Club, Rocking the Daisies
+END:VEVENT
+END:VCALENDAR
