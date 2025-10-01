@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RTD 2025 — Pocket Schedule</title>
+<style>
+  :root { --bg:#0b0b0c; --card:#151517; --ink:#f6f7fb; --muted:#a5a7af; --pill:#2a2b30; --accent:#8ecdf0; --good:#a7f0ba; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+  header{position:sticky;top:0;background:linear-gradient(180deg,rgba(11,11,12,.95),rgba(11,11,12,.85));backdrop-filter:blur(8px);z-index:5}
+  .wrap{max-width:880px;margin:0 auto;padding:16px}
+  h1{font-size:1.25rem;margin:0 0 8px}
+  .controls{display:flex;gap:8px;flex-wrap:wrap}
+  select,button,input{background:var(--pill);color:var(--ink);border:1px solid #2d2f35;border-radius:12px;padding:10px 12px;font-size:0.95rem}
+  .grid{display:grid;grid-template-columns:1fr;gap:10px;padding:16px}
+  .card{background:var(--card);border:1px solid #22232a;border-radius:16px;padding:12px}
+  .date{font-weight:700;font-size:0.95rem;color:var(--accent);margin-bottom:8px}
+  .event{display:flex;align-items:center;gap:10px;padding:10px;border-radius:12px;border:1px dashed #2a2b30;margin:6px 0}
+  .time{min-width:92px;font-variant-numeric:tabular-nums;color:var(--muted)}
+  .act{font-weight:600}
+  .stage{margin-left:auto;font-size:0.85rem;background:#1f2025;padding:6px 8px;border-radius:999px;color:#d0d3db;border:1px solid #2a2b30}
+  .now{border:1px solid var(--good);box-shadow:0 0 0 2px rgba(167,240,186,.15) inset}
+  .pill{display:inline-flex;gap:6px;align-items:center;background:var(--pill);padding:6px 10px;border-radius:999px;border:1px solid #2a2b30}
+  .muted{color:var(--muted)}
+  footer{opacity:.7;padding:24px;text-align:center}
+  a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>🎶 Rocking the Daisies 2025 — Pocket Schedule</h1>
+    <div class="controls">
+      <select id="day">
+        <option value="2025-10-03">Fri 3 Oct</option>
+        <option value="2025-10-04">Sat 4 Oct</option>
+        <option value="2025-10-05">Sun 5 Oct</option>
+      </select>
+      <select id="stage">
+        <option value="All">All stages</option>
+        <option>Main Stage</option>
+        <option>Corona Beach Club</option>
+        <option>Sowing the Seeds</option>
+      </select>
+      <input id="search" placeholder="Search artist…" />
+      <button id="nowBtn">Jump to now</button>
+    </div>
+    <div class="muted" id="hint">Tip: Add this page to your Home Screen for quick access.</div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="grid" id="list"></div>
+</main>
+<footer class="muted">Times in Africa/Johannesburg (UTC+2). Data: your custom lineup.</footer>
+<script>
+const tz = 'Africa/Johannesburg'; // display only
+const data = [{"date": "2025-10-03", "stage": "Corona Beach Club", "act": "Black Villain", "time": "10:00\u201311:00", "startISO": "2025-10-03T10:00:00", "endISO": "2025-10-03T11:00:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Crayons", "time": "10:30\u201311:15", "startISO": "2025-10-03T10:30:00", "endISO": "2025-10-03T11:15:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "Earful Soul", "time": "11:00\u201312:00", "startISO": "2025-10-03T11:00:00", "endISO": "2025-10-03T12:00:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Miss U", "time": "11:15\u201312:15", "startISO": "2025-10-03T11:15:00", "endISO": "2025-10-03T12:15:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "!Sooks", "time": "12:00\u201313:00", "startISO": "2025-10-03T12:00:00", "endISO": "2025-10-03T13:00:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Os-Tailor", "time": "12:15\u201313:15", "startISO": "2025-10-03T12:15:00", "endISO": "2025-10-03T13:15:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "Ryan Murgatroyd", "time": "13:00\u201314:00", "startISO": "2025-10-03T13:00:00", "endISO": "2025-10-03T14:00:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Wesley XTC", "time": "13:15\u201314:15", "startISO": "2025-10-03T13:15:00", "endISO": "2025-10-03T14:15:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "Atmos Blaq", "time": "14:00\u201315:00", "startISO": "2025-10-03T14:00:00", "endISO": "2025-10-03T15:00:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Mishy Kope", "time": "14:30\u201315:00", "startISO": "2025-10-03T14:30:00", "endISO": "2025-10-03T15:00:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "Kid Fonque", "time": "15:00\u201316:00", "startISO": "2025-10-03T15:00:00", "endISO": "2025-10-03T16:00:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Kayla the Crow", "time": "15:00\u201315:30", "startISO": "2025-10-03T15:00:00", "endISO": "2025-10-03T15:30:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Meccamind", "time": "15:45\u201316:45", "startISO": "2025-10-03T15:45:00", "endISO": "2025-10-03T16:45:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "AV on Decks", "time": "16:00\u201317:00", "startISO": "2025-10-03T16:00:00", "endISO": "2025-10-03T17:00:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Miss CJ", "time": "16:45\u201317:45", "startISO": "2025-10-03T16:45:00", "endISO": "2025-10-03T17:45:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "Shamiso", "time": "17:00\u201318:00", "startISO": "2025-10-03T17:00:00", "endISO": "2025-10-03T18:00:00"}, {"date": "2025-10-03", "stage": "Main Stage", "act": "D\u2019Phault", "time": "17:30\u201318:00", "startISO": "2025-10-03T17:30:00", "endISO": "2025-10-03T18:00:00"}, {"date": "2025-10-03", "stage": "Main Stage", "act": "Filah Lah Lah", "time": "18:00\u201318:30", "startISO": "2025-10-03T18:00:00", "endISO": "2025-10-03T18:30:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "DJ Zinhle", "time": "18:00\u201319:00", "startISO": "2025-10-03T18:00:00", "endISO": "2025-10-03T19:00:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Kdollahz x RTD Legacy Ball", "time": "18:00\u201319:00", "startISO": "2025-10-03T18:00:00", "endISO": "2025-10-03T19:00:00"}, {"date": "2025-10-03", "stage": "Main Stage", "act": "Marcus Harvey", "time": "19:00\u201319:30", "startISO": "2025-10-03T19:00:00", "endISO": "2025-10-03T19:30:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "FKA Mash", "time": "19:00\u201320:00", "startISO": "2025-10-03T19:00:00", "endISO": "2025-10-03T20:00:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Tsels DJ", "time": "19:00\u201320:00", "startISO": "2025-10-03T19:00:00", "endISO": "2025-10-03T20:00:00"}, {"date": "2025-10-03", "stage": "Main Stage", "act": "A-Reece", "time": "20:00\u201320:30", "startISO": "2025-10-03T20:00:00", "endISO": "2025-10-03T20:30:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "Shakes & Les", "time": "20:00\u201321:00", "startISO": "2025-10-03T20:00:00", "endISO": "2025-10-03T21:00:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Soulchoke", "time": "20:00\u201321:00", "startISO": "2025-10-03T20:00:00", "endISO": "2025-10-03T21:00:00"}, {"date": "2025-10-03", "stage": "Main Stage", "act": "Elaine", "time": "21:00\u201321:45", "startISO": "2025-10-03T21:00:00", "endISO": "2025-10-03T21:45:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "Scotts Maphuma", "time": "21:00\u201321:30", "startISO": "2025-10-03T21:00:00", "endISO": "2025-10-03T21:30:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Bravo Le Roux", "time": "21:00\u201322:00", "startISO": "2025-10-03T21:00:00", "endISO": "2025-10-03T22:00:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "Kabza De Small", "time": "21:30\u201322:30", "startISO": "2025-10-03T21:30:00", "endISO": "2025-10-03T22:30:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Kyeezi", "time": "22:00\u201323:00", "startISO": "2025-10-03T22:00:00", "endISO": "2025-10-03T23:00:00"}, {"date": "2025-10-03", "stage": "Main Stage", "act": "Focalistic", "time": "22:15\u201323:00", "startISO": "2025-10-03T22:15:00", "endISO": "2025-10-03T23:00:00"}, {"date": "2025-10-03", "stage": "Corona Beach Club", "act": "Black Motion", "time": "22:30\u201300:00", "startISO": "2025-10-03T22:30:00", "endISO": "2025-10-04T00:00:00"}, {"date": "2025-10-03", "stage": "Sowing the Seeds", "act": "Workaholics", "time": "23:00\u201300:00", "startISO": "2025-10-03T23:00:00", "endISO": "2025-10-04T00:00:00"}, {"date": "2025-10-03", "stage": "Main Stage", "act": "Jessie Reyez", "time": "23:30\u201300:30", "startISO": "2025-10-03T23:30:00", "endISO": "2025-10-04T00:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Lelowhatsgood", "time": "00:00\u201301:00", "startISO": "2025-10-04T00:00:00", "endISO": "2025-10-04T01:00:00"}, {"date": "2025-10-04", "stage": "Main Stage", "act": "Summer Walker", "time": "01:00\u201302:00", "startISO": "2025-10-04T01:00:00", "endISO": "2025-10-04T02:00:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Celso Fabbri", "time": "01:00\u201302:00", "startISO": "2025-10-04T01:00:00", "endISO": "2025-10-04T02:00:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Surprise Act", "time": "02:00\u201304:00", "startISO": "2025-10-04T02:00:00", "endISO": "2025-10-04T04:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "DJ Clen", "time": "02:00\u201303:00", "startISO": "2025-10-04T02:00:00", "endISO": "2025-10-04T03:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Rarri", "time": "03:00\u201304:00", "startISO": "2025-10-04T03:00:00", "endISO": "2025-10-04T04:00:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Autumn Erin", "time": "10:00\u201311:00", "startISO": "2025-10-04T10:00:00", "endISO": "2025-10-04T11:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Crayons", "time": "10:00\u201310:30", "startISO": "2025-10-04T10:00:00", "endISO": "2025-10-04T10:30:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Christian b2b Sip", "time": "10:30\u201311:30", "startISO": "2025-10-04T10:30:00", "endISO": "2025-10-04T11:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Amy Mauritz", "time": "11:00\u201312:00", "startISO": "2025-10-04T11:00:00", "endISO": "2025-10-04T12:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Color6lind", "time": "11:30\u201312:30", "startISO": "2025-10-04T11:30:00", "endISO": "2025-10-04T12:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Chronical Deep", "time": "12:00\u201313:00", "startISO": "2025-10-04T12:00:00", "endISO": "2025-10-04T13:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Jason Scoble", "time": "12:30\u201313:30", "startISO": "2025-10-04T12:30:00", "endISO": "2025-10-04T13:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "2Shoes", "time": "13:00\u201314:00", "startISO": "2025-10-04T13:00:00", "endISO": "2025-10-04T14:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Guvenchy", "time": "13:30\u201314:30", "startISO": "2025-10-04T13:30:00", "endISO": "2025-10-04T14:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Massh", "time": "14:00\u201315:00", "startISO": "2025-10-04T14:00:00", "endISO": "2025-10-04T15:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Lover Boy", "time": "14:30\u201315:30", "startISO": "2025-10-04T14:30:00", "endISO": "2025-10-04T15:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Tristan Urwin", "time": "15:00\u201316:00", "startISO": "2025-10-04T15:00:00", "endISO": "2025-10-04T16:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Senhor\u00e1", "time": "15:30\u201316:30", "startISO": "2025-10-04T15:30:00", "endISO": "2025-10-04T16:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Dwson", "time": "16:00\u201317:00", "startISO": "2025-10-04T16:00:00", "endISO": "2025-10-04T17:00:00"}, {"date": "2025-10-04", "stage": "Main Stage", "act": "D\u2019Phault", "time": "16:30\u201317:00", "startISO": "2025-10-04T16:30:00", "endISO": "2025-10-04T17:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Shakes", "time": "16:30\u201317:30", "startISO": "2025-10-04T16:30:00", "endISO": "2025-10-04T17:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Caiiro b2b Enoo Napa", "time": "17:00\u201319:00", "startISO": "2025-10-04T17:00:00", "endISO": "2025-10-04T19:00:00"}, {"date": "2025-10-04", "stage": "Main Stage", "act": "Kujenga", "time": "17:15\u201318:15", "startISO": "2025-10-04T17:15:00", "endISO": "2025-10-04T18:15:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "RTD x GalxBoy Fashion Show", "time": "17:30\u201318:30", "startISO": "2025-10-04T17:30:00", "endISO": "2025-10-04T18:30:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Kdollahz x RTD Legacy Ball", "time": "18:30\u201319:30", "startISO": "2025-10-04T18:30:00", "endISO": "2025-10-04T19:30:00"}, {"date": "2025-10-04", "stage": "Main Stage", "act": "Lee Cole", "time": "18:45\u201319:30", "startISO": "2025-10-04T18:45:00", "endISO": "2025-10-04T19:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Djeff", "time": "19:00\u201320:00", "startISO": "2025-10-04T19:00:00", "endISO": "2025-10-04T20:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Keem", "time": "19:45\u201320:45", "startISO": "2025-10-04T19:45:00", "endISO": "2025-10-04T20:45:00"}, {"date": "2025-10-04", "stage": "Main Stage", "act": "Saxby Twins", "time": "20:00\u201320:30", "startISO": "2025-10-04T20:00:00", "endISO": "2025-10-04T20:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Pierre Johnson", "time": "20:00\u201321:00", "startISO": "2025-10-04T20:00:00", "endISO": "2025-10-04T21:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Sharky", "time": "20:45\u201321:45", "startISO": "2025-10-04T20:45:00", "endISO": "2025-10-04T21:45:00"}, {"date": "2025-10-04", "stage": "Main Stage", "act": "Loatinover Pounds", "time": "21:00\u201321:30", "startISO": "2025-10-04T21:00:00", "endISO": "2025-10-04T21:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Summer Heynes", "time": "21:00\u201322:00", "startISO": "2025-10-04T21:00:00", "endISO": "2025-10-04T22:00:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "Enrico Celento b2b Liam Hans", "time": "21:45\u201322:45", "startISO": "2025-10-04T21:45:00", "endISO": "2025-10-04T22:45:00"}, {"date": "2025-10-04", "stage": "Main Stage", "act": "Mereba", "time": "22:00\u201323:00", "startISO": "2025-10-04T22:00:00", "endISO": "2025-10-04T23:00:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Leemckrazy", "time": "22:00\u201322:30", "startISO": "2025-10-04T22:00:00", "endISO": "2025-10-04T22:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Vigro Deep", "time": "22:30\u201323:30", "startISO": "2025-10-04T22:30:00", "endISO": "2025-10-04T23:30:00"}, {"date": "2025-10-04", "stage": "Sowing the Seeds", "act": "KindlyNxsh", "time": "23:00\u201300:00", "startISO": "2025-10-04T23:00:00", "endISO": "2025-10-05T00:00:00"}, {"date": "2025-10-04", "stage": "Main Stage", "act": "Sam Tompkins", "time": "23:30\u201300:30", "startISO": "2025-10-04T23:30:00", "endISO": "2025-10-05T00:30:00"}, {"date": "2025-10-04", "stage": "Corona Beach Club", "act": "Starrza", "time": "23:30\u201301:00", "startISO": "2025-10-04T23:30:00", "endISO": "2025-10-05T01:00:00"}, {"date": "2025-10-05", "stage": "Main Stage", "act": "Earl Sweatshirt", "time": "01:00\u201302:00", "startISO": "2025-10-05T01:00:00", "endISO": "2025-10-05T02:00:00"}, {"date": "2025-10-05", "stage": "Corona Beach Club", "act": "Skelm", "time": "01:00\u201302:00", "startISO": "2025-10-05T01:00:00", "endISO": "2025-10-05T02:00:00"}, {"date": "2025-10-05", "stage": "Corona Beach Club", "act": "Que DJ", "time": "02:00\u201303:00", "startISO": "2025-10-05T02:00:00", "endISO": "2025-10-05T03:00:00"}, {"date": "2025-10-05", "stage": "Sowing the Seeds", "act": "Teddy Tumi", "time": "02:00\u201303:00", "startISO": "2025-10-05T02:00:00", "endISO": "2025-10-05T03:00:00"}, {"date": "2025-10-05", "stage": "Corona Beach Club", "act": "Niskerone", "time": "03:00\u201304:00", "startISO": "2025-10-05T03:00:00", "endISO": "2025-10-05T04:00:00"}, {"date": "2025-10-05", "stage": "Sowing the Seeds", "act": "BakerGotTheKeys", "time": "03:00\u201304:00", "startISO": "2025-10-05T03:00:00", "endISO": "2025-10-05T04:00:00"}, {"date": "2025-10-05", "stage": "Corona Beach Club", "act": "Latique", "time": "09:00\u201310:00", "startISO": "2025-10-05T09:00:00", "endISO": "2025-10-05T10:00:00"}, {"date": "2025-10-05", "stage": "Corona Beach Club", "act": "Capri-Sons", "time": "10:00\u201311:30", "startISO": "2025-10-05T10:00:00", "endISO": "2025-10-05T11:30:00"}, {"date": "2025-10-05", "stage": "Corona Beach Club", "act": "Meek", "time": "11:30\u201313:00", "startISO": "2025-10-05T11:30:00", "endISO": "2025-10-05T13:00:00"}, {"date": "2025-10-05", "stage": "Corona Beach Club", "act": "Jamie Slabber b2b Keilamanjaro", "time": "13:00\u201315:00", "startISO": "2025-10-05T13:00:00", "endISO": "2025-10-05T15:00:00"}, {"date": "2025-10-05", "stage": "Corona Beach Club", "act": "Blaqkongo", "time": "15:00\u201316:00", "startISO": "2025-10-05T15:00:00", "endISO": "2025-10-05T16:00:00"}, {"date": "2025-10-05", "stage": "Corona Beach Club", "act": "Jazzworx & Thukuthela", "time": "16:00\u201317:00", "startISO": "2025-10-05T16:00:00", "endISO": "2025-10-05T17:00:00"}];
+const list = document.getElementById('list');
+const daySel = document.getElementById('day');
+const stageSel = document.getElementById('stage');
+const search = document.getElementById('search');
+const nowBtn = document.getElementById('nowBtn');
+
+function render() {
+  const day = daySel.value;
+  const stage = stageSel.value;
+  const q = search.value.trim().toLowerCase();
+  list.innerHTML = '';
+  const dayItems = data.filter(e => e.date === day && (stage==='All' || e.stage===stage) && (q==='' || e.act.toLowerCase().includes(q)));
+  let block = document.createElement('div');
+  block.className='card';
+  const dateTitle = document.createElement('div');
+  dateTitle.className='date';
+  dateTitle.textContent = new Date(day+'T00:00:00').toDateString();
+  block.appendChild(dateTitle);
+  dayItems.forEach(e => {
+    const row = document.createElement('div');
+    row.className='event';
+    row.dataset.start = e.startISO;
+    row.dataset.end = e.endISO;
+    const t = document.createElement('div');
+    t.className='time';
+    t.textContent = e.time;
+    const a = document.createElement('div');
+    a.className='act';
+    a.textContent = e.act;
+    const s = document.createElement('div');
+    s.className='stage';
+    s.textContent = e.stage;
+    row.appendChild(t); row.appendChild(a); row.appendChild(s);
+    block.appendChild(row);
+  });
+  list.appendChild(block);
+  highlightNow();
+}
+
+function highlightNow() {
+  const now = new Date();
+  document.querySelectorAll('.event').forEach(el => {
+    const start = new Date(el.dataset.start);
+    const end = new Date(el.dataset.end);
+    if (now >= start && now <= end) el.classList.add('now'); else el.classList.remove('now');
+  });
+}
+
+nowBtn.addEventListener('click', () => {
+  const now = new Date();
+  daySel.value = now.toISOString().slice(0,10);
+  render();
+  const onNow = document.querySelector('.event.now');
+  if (onNow) onNow.scrollIntoView({behavior:'smooth', block:'center'});
+});
+
+daySel.addEventListener('change', render);
+stageSel.addEventListener('change', render);
+search.addEventListener('input', render);
+render();
+setInterval(highlightNow, 60000);
+</script>
+</body>
+</html>
